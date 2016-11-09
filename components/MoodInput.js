@@ -12,7 +12,7 @@ export default class MoodInput extends Component {
       super();
       const ds = new ListView.DataSource({rowHasChanged: (r1, r2) => r1 !== r2});
       this.state = {
-        dataSource: ds.cloneWithRows(['row 1', 'row 2']),
+        dataSource: ds.cloneWithRows(['Really Sad Face', 'Sad Face', 'Neutral Face', 'Happy Face', 'Really Happy Face']),
       };
     }
 
