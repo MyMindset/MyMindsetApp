@@ -6,19 +6,22 @@ import {
   View
 } from 'react-native';
 
+import MoodInput from './components/MoodInput'
+
 export default class MyMindsetApp extends Component {
   render() {
     return (
       <View style={styles.container}>
         <Text style={styles.welcome}>
-          Header Text
+          MyMindset
         </Text>
         <Text style={styles.instructions}>
-          Secondary Text
+          Log In
         </Text>
         <Text style={styles.instructions}>
-          Another line
+          Sign Up
         </Text>
+        <MoodInput />
       </View>
     );
   }
@@ -26,7 +29,7 @@ export default class MyMindsetApp extends Component {
 
 const styles = StyleSheet.create({
   container: {
-    flex: 1,
+    flex: 4,
     justifyContent: 'center',
     alignItems: 'center',
     backgroundColor: '#cfdfef',

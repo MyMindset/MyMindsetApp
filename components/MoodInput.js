@@ -19,30 +19,20 @@ export default class MoodInput extends Component {
   render() {
     return (
       <ListView
+
         dataSource={this.state.dataSource}
-        renderRow={(rowData) => <Text>{rowData}</Text>}
+        renderRow={(rowData) => <Text style={styles.moodbox}>{rowData}</Text>}
       />
     );
   }
 }
 
 const styles = StyleSheet.create({
-  container: {
+  moodbox: {
+    flexDirection: 'row',
     flex: 1,
-    justifyContent: 'center',
-    alignItems: 'center',
-    backgroundColor: '#cfdfef',
-  },
-  welcome: {
-    fontSize: 20,
-    textAlign: 'center',
+    backgroundColor: 'red',
     margin: 10,
-  },
-  instructions: {
-    textAlign: 'center',
-    color: '#333333',
-    marginBottom: 5,
+    overflow: 'hidden',
   },
 });
-
-AppRegistry.registerComponent('MyMindsetApp', () => MyMindsetApp);
